@@ -25,9 +25,9 @@ public class inputOutput {
         try { // 이 부분을 실행하다가 오류 발생하면 아래 실행.
             Scanner sc = new Scanner(file);
             while(sc.hasNextInt()) { // 읽어올 수 있는 정수가 존재할 때.
-                System.out.println(sc.nextInt() * 100);
+                System.out.println(sc.nextInt() * 100); // 파일읅 읽어서 100을 곱함.
             }
-            sc.close();
+            sc.close(); // 끝냄.
         } catch (FileNotFoundException e) {
             System.out.println("파일을 읽어오는 도중에 오류가 발생했습니다.");
         }
