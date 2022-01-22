@@ -12,7 +12,12 @@ public class func {
     }
     //  이 함수는 number라는 수가 있을 때, 그 수의 k 번째 약수를 구하는 함수이다.
     public static void main(String[] args) {
-        System.out.println("정수 120의 7번째 약수는"+function(120, 7));
+        int result = function(3050, 10);
+        if (result == -1) {
+            System.out.println("number의 k번째 약수는 없습니다");
+        } else {
+            System.out.println("number의 k번째 약수는" + result + "입니다.");
+        }
     }
     
 }
