@@ -1,6 +1,6 @@
 public class bokki {
 
-    public static int function(int a, int b, int c) {
+    // public static int function(int a, int b, int c) {
     
         // int min;
         // if (a > b) {
