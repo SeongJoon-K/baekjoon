@@ -21,4 +21,5 @@ public class alist {
         System.out.println(result);
     }
     
+    
 }
