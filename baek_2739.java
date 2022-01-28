@@ -13,17 +13,14 @@ public class baek_2739 {
         int count = Integer.parseInt(br.readLine());
 
 
-        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        StringTokenizer st;
         for (int i = 0; i < count; i++) {
-            bw.write(Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()));
-
+            st = new StringTokenizer(br.readLine());
+            int A = Integer.parseInt(st.nextToken());
+            int B = Integer.parseInt(st.nextToken());
+            int sum = A+B;
+            bw.write(sum + "\n");
         }
-        bw.close();
-        bw.flush();
-        bw.close();
-
-
-
-        
+        bw.flush();        
     }
 }
