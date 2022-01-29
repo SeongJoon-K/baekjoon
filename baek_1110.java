@@ -14,20 +14,25 @@ public class baek_1110 {
                 // n을 1의 자리로 하고 처음 수의 1의 자리수를 10의 자리로 한다.
                 // 그렇지 않으면, 10의 자리수와 1의 자리수 더한 걸 일의 자리로하고
                 // 1의자리수를 10의 자리수로 만든다.
-
-            if (((N/10) + (N%10))>=10) {
-                N = (N%10) * 10 + ((N/10) + (N%10)-10);
-                count ++;
-                if (count > 1 && N == de) {
-                    break;
-                }
-            } else if (((N/10) + (N%10)) < 10) {
-                N = (N/10) + (N%10) + (N%10*10);
-                count ++;
-                if (count > 1 && N == de) {
-                    break;
-                }                   
+            if (N == 0) {
+                count = 1;
+                break;
+            } else {
+                if (((N/10) + (N%10))>=10) {
+                    N = (N%10) * 10 + ((N/10) + (N%10)-10);
+                    count ++;
+                    if (count > 1 && N == de) {
+                        break;
+                    }
+                } else if (((N/10) + (N%10)) < 10) {
+                    N = (N/10) + (N%10) + (N%10*10);
+                    count ++;
+                    if (count > 1 && N == de) {
+                        break;
+                    }                   
+                } 
             }
+               
         }
         sc.close();
         System.out.println(count);
