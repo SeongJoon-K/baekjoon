@@ -9,7 +9,6 @@ public class baek_2577 {
 
         String value = Integer.toString(result);
         sc.close();
-        System.out.println(value);
         for (int i = 0; i < 10; i++) {
             int count = 0;
             for (int j = 0; j < value.length(); j++){
