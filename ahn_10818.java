@@ -19,5 +19,6 @@ public class ahn_10818 {
         }
         num.sort(Comparator.naturalOrder());
         System.out.println(num.get(0)+" "+num.get(N-1));
+        ## back2
     }
 }
