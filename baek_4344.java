@@ -14,13 +14,16 @@ public class baek_4344 {
             for (int j = 0; j < N; j++){
                 score[j] = sc.nextInt();
                 sum = sum + score[j];
+                System.out.println("Sum 값" + sum);
             }
+            avg = sum / N;
             for (int k = 0; k < N; k++){
                 if (score[k] > avg) {
                     cnt ++;
                 }
             }
-            System.out.println(N/cnt + "%");
+            System.out.println("평균"+avg);
+            System.out.println(String.format("%.3f", (cnt/N)*100) +"%");
         }
     }
 }
