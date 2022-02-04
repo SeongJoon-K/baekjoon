@@ -3,21 +3,8 @@ import java.util.Scanner;
 
 public class method_pratice {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int b = sc.nextInt();
-
-
-        method_pratice mp = new method_pratice();
-        mp.sum(int[] b);
-    }
-
-    public long sum(int[] a) {
-
-        int hap = 0;
-        for (int i = 0; i < a.length; i++) {
-            hap = hap + a[i];
-        }
-        System.out.println(hap);
-
+        System.out.println("w");
+        System.out.println(Math.floor(1.1));
+        // 여기까지가 메인 메소드임 우리는 이미 메소드를 사용하고 있었음.
     }
 }
