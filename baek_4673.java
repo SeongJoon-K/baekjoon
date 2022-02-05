@@ -1,30 +1,31 @@
-import java.util.Scanner;
+import java.io.IOException;
 
-public class baek_4673 {
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int sum;
-
-        while (true) {
-
-            if (a / 1000 > 1) {
-                sum = a + (a/1000) + ((a%1000)/100) + ((a%100)/10) + (a%10);
-                System.out.println(sum);
-                if (sum >= 10000) {
-                    break;
+public class baek_4673{
+   
+    public static void main(String[] args) throws IOException{
+        boolean[] check = new boolean[10001];
+        for(int i = 0; i < check.length; i++) {
+            check[i] = true;
+        }
+        for(int i = 1; i < check.length; i++) {
+          //시작숫자
+            int num = i;
+            while(num <= 10000) {
+            String num1 = String.valueOf(num);
+            // 생성자
+                for(int j = 0; j < num1.length(); j++) {
+                    char num2 = num1.charAt(j);
+                    int num3 = num2 - '0';
+                    num += num3;
                 }
-            } else if (a / 100 < 10 && a / 100 > 1) {
-                sum = a + (a/100) + ((a%100)/10) + (a%10);
-                System.out.println(sum);
-            } else if (a / 10 < 10 && a / 10 > 1) {
-                sum = a + (a/10) + a%10;
-                System.out.println(sum);
-            } else {
-                sum = a + a;
-                System.out.println(sum);
+                if(num > 10000) {
+                break;
+                }
+                check[num] = false;
+                }
             }
+            for(int i = 1; i < check.length; i++) {
+            if(check[i]) System.out.println(i);
         }
     }
 }
