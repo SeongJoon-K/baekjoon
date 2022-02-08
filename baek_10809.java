@@ -24,11 +24,5 @@ public class baek_10809 {
         for(char key : map.keySet()){
             System.out.print(map.get(key)+ " ");
         }
-
-    
-
-
-
     }
-    
 }
