@@ -12,7 +12,7 @@ public class baek_1712 {
 
         if (B >= C) {         // 생산단가가 판매가보다 비쌀 때
             i = -1;
-            System.out.println();
+            System.out.println(i);
         } else {
             i = A/price + 1;
             System.out.println(i);
