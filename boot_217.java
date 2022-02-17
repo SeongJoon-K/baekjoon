@@ -15,21 +15,8 @@ public class boot_217 {
             int a = Integer.parseInt(br.readLine());
             arr[i] = a;
         }
-        while (true) {
-            for (int k = 0; k < 7; k++) {
-                shot[k] = arr [(int)random];
-                sum += shot[k];
-                System.out.println(shot[k]);
-            }
-            if (sum == 100) {
-                for(int k=0;k < 7; k++) {
-                    System.out.println(shot[k]);
-                }
-                break;
-            } else {
-                sum = 0;
-            }
-            
+        for (int k = 0; k < 7; k++) {
+            shot[k] = arr[int (random)];
         }
     }
 }
