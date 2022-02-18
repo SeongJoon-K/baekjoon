@@ -17,11 +17,10 @@ public class baek_2775 {
                 for (int h = 1; h <= n; h++) {
                     hosu[h] = h; // 호수의 구성원은 그냥 h임
                 for (int j = 0; j <= k; j++) { // 층수
-                    if (j == 0) {   // 0층일때
+                    if (k == 0) {   // 0층일때
                         System.out.println(hosu[j]);
-                        }
-                    } else {    // 그렇지 않으면 0층 이상일 땐,
-                        for (int a = 1; a <= n; a++) {
+                    } else {
+                        for (int a = 1; a <=n; a++) {
                             
                         }
                     }
