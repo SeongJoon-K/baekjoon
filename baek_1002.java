@@ -14,9 +14,9 @@ public class baek_1002 {
             if (x1 == x2 && y1 == y2 && r1 == r2) {
                 System.out.println(-1);
             } else if (Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2))==r1+r2) {
-                System.out.println(1);
+                System.out.println(1); //
             } else if (Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2))==Math.abs(r1-r2)) {
-                System.out.println(1);
+                System.out.println(1); 
             } else if (Math.abs(r1-r2) < Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)) && Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)) < Math.abs(r1+r2)){
                 System.out.println(2);
             } else {
