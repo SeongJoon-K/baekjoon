@@ -1,18 +1,36 @@
 import turtle
 
-colors = ["red","purple","blue","green","yellow","orange"]
-t = turtle.Turtle()
+# colors = ["red","purple","blue","green","yellow","orange"]
+# t = turtle.Turtle()
 
-turtle.bgcolor("black")
-t.speed(0)
-t.width(3)
-length= 10
+# turtle.bgcolor("black")
+# t.speed(0)
+# t.width(3)
+# length= 10
 
-while length < 500 :
-    t.forward(length)
-    t.pencolor(colors[length%6])
-    t.right(89)
-    length += 5
+# while length < 500 :
+#     t.forward(length)
+#     t.pencolor(colors[length%6])
+#     t.right(89)
+#     length += 5
 
-turtle.done()
-turtle.exitonclick()
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.forward(100)
+# t.left(60)
+# t.forward(100)
+# t.left(60)
+# t.forward(100)
+# t.left(60)
+# t.forward(100)
+# t.left(60)
+# t.forward(100)
+# t.left(60)
+# t.forward(100)
+# t.left(60)
+
+# t.circle(100)
+
+
+# turtle.done()
+# turtle.exitonclick()
