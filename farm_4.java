@@ -5,16 +5,16 @@ public class farm_4 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        String input;
-        input = sc.nextLine();
-        if (input.equals("+")) {
-            System.out.println(a + b);
-        } else if (input.equals("-")) {
+        String input = sc.nextLine();
+        if (input.contains("+")) {
+            System.out.print(a + b);
+        } else if (input.contains("-")) {
             System.out.println(a - b);
-        } else if (input.equals("*")) {
+        } else if (input.contains("*")) {
             System.out.println(a * b);
-        } else if (input.equals("/")) {
+        } else if (input.contains("/")) {
             System.out.println(a / b);
         }
+        sc.close();
     }
 }
