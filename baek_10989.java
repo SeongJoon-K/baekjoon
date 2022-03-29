@@ -1,25 +1,21 @@
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.io.*;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
-public class baek_2751 {
+public class baek_10989 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
 
         int N = Integer.parseInt(br.readLine());
-        ArrayList<Integer> list = new ArrayList<>();
+        int arr[] = new int[N];
 
         for (int i = 0; i < N; i++) {
-            list.add(Integer.parseInt(br.readLine()));
+            arr[i] = Integer.parseInt(br.readLine());
         }
-        Collections.sort(list);
-        for (int value : list) {
+        Arrays.sort(arr);
+        for (int value : arr) {
             sb.append(value).append("\n");
         }
         System.out.println(sb);
