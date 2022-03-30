@@ -14,27 +14,24 @@ public class baek_2108 {
         int min = 4001;
         int maxindex = 0;
         int cnt = 0;
-        int[] high = new int[4000];
+        int[] high = new int[4001];
+        int mod = 0;
+        boolean check = false;
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(br.readLine());
             sum = arr[i];
-            index[arr[i]] += 1;
-            if (max < arr[i]) {
-                max = arr[i];
-            }
-            if (min > arr[i]) {
-                min = arr[i];
-            }
-        }
-        for (int j = 0; j < N; j++) {
-            if (maxindex < index[j]) {
-                maxindex = index[j];
-            }
-        }
-        for (int k = 0; k < N; k++) {
-            if (maxindex == index[k]) {
-                high[cnt] = index[k];
+            if (arr[i] == arr[1 + i]) {
                 cnt++;
+            } else {
+                cnt = 0;
+            }
+            if (max < cnt) {
+                max = cnt;
+                mod = arr[i];
+                check = true;
+            } else if (max == cnt && check == true) {
+                mod = arr[i];
+                check = false;
             }
         }
         Arrays.sort(arr);
