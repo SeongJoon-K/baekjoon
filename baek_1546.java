@@ -17,12 +17,12 @@ public class baek_1546 {
         }
         System.out.println("max값" + max);
         for (int i = 0; i < score.length; i++) {
-            
-            score[i] = score[i]*100/max;
 
-            System.out.println("이거 바꾼점수 값"+score[i]);
+            score[i] = score[i] * 100 / max;
+
+            System.out.println("이거 바꾼점수 값" + score[i]);
             sum = score[i] + sum;
         }
-        System.out.println(sum/N);
+        System.out.println(sum / N);
     }
 }
