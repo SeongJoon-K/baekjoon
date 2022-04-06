@@ -13,7 +13,7 @@ public class arr {
         // 1 2 3 4 5 6 7
         for (int i = N; i >= pos; i--) {
             arr[i + 1] = arr[i];
-        }
+        } // 배열 값 한 칸 늘리고 addNum 삽입
         arr[3] = addNum;
         for (int i = 0; i < 8; i++) {
             System.out.println(arr[i]);
